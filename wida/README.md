@@ -1,4 +1,4 @@
-# Wida
+# Wida Sahara Sohibudin
 HEALTHCARE....
 
 Berbagai keluhan sering sekali disampaikan oleh masyarakat dalam bidang kesehatan terutama pelayanan kesehatan bagi kalangan masyarakat menengah kebawah. Hal tersebut mendorong pemerintah untuk melakukan berbagai tindakan dan meluncurkan berbagai kebijakan yang erat kaitannya dengan pelayanan kesehatan seperti  asuransi kesehatan miskin (ASKESKIN), Jamsostek (untuk karyawan) hingga kartu sehat yang saat ini dikenal sebagai BPJS Kesehatan.
