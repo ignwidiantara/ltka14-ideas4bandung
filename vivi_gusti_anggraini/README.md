@@ -1,1 +1,0 @@
-# Vivi Gusti Anggraini
