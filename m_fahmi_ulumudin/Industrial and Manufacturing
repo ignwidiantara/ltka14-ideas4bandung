@@ -1,0 +1,69 @@
+# Industrial and Manufacturing
+
+Kualitas lingkungan yang sehat merupakan kebutuhan pokok masyarakat. Udara, air dan suara sebagai komponen lingkungan yang penting dalam kehidupan perlu dipelihara dan ditingkatkan kualitasnya sehingga dapat memberikan daya dukungan bagi makhluk hidup untuk hidup secara optimal. Pencemaran lingkungan saat ini semakin menampakkan kondisi yang sangat memprihatinkan. Salah satu sumber pencemaran lingkungan tersebut berasal dari kegiatan industri. Dapat dikatakan industri merupakan salah satu kontributor terbesar dari pencemar lingkungan yang dibuang ke udara bebas. Dampak dari pencemaran lingkungan oleh industri tersebut menyebabkan penurunan kualitas udara, air dan peningkatan tingkat kebisingan yang berdampak negatif terhadap kesehatan masyarakat.
+
+Polusi udara menjadi salah satu masalah penting yang dapat mengancam kehidupan manusia. Gas-gas polutan seperti CO, CO2, SO2, NO dan NO2 pada umumnya, Oleh sebab itu, diperlukan suatu monitoring sistem tingkat polusi udara untuk mengetahui indeks polusi udara di kawasan yang rentan polusi khususnya di daerah perindustrian dengan memonitor gas CO yang dihasilkan, agar  kadar  polutan dapat dimonitor dan diusahakan berada di bawah nilai standar yang telah ditentukan. Dengan adanya pendeteksi tingkat kandungan gas polutan dalam udara diharapkan pabrik-pabrik industri dapat meminimalisir pencemaran udara.
+
+Begitu juga dengan polusi air, Limbah industri sangat potensial sebagai penyebab terjadinya pencemaran air. Pada umumnya limbah industri mengandung limbah B3, yaitu bahan berbahaya dan beracun. Menurut PP 18 tahun 99 pasal 1, limbah B3 adalah sisa suatu usaha atau kegiatan yang mengandung bahan berbahaya dan beracun yang dapat mencemarkan atau merusak lingkungan hidup sehingga membahayakan kesehatan serta kelangsungan hidup manusia dan mahluk lainnya. Karakteristik limbah B3 adalah korosif/ menyebabkan karat, mudah terbakar dan meledak, bersifat toksik/ beracun dan menyebabkan infeksi/ penyakit. Limbah industri yang berbahaya antara lain yang mengandung logam dan cairan asam. Misalnya limbah yang dihasilkan industri pelapisan logam, yang mengandung tembaga dan nikel serta cairan asam sianida, asam borat, asam kromat, asam nitrat dan asam fosfat. Limbah ini bersifat korosif, dapat mematikan tumbuhan dan hewan air. Pada manusia menyebabkan iritasi pada kulit dan mata, mengganggu pernafasan dan menyebabkan kanker.
+
+Selain itu, polusi suara juga dapat mengganggu kesehatan masyarakat. pencemaran suara yang diakibatkan oleh bunyi atau suara yang mengakibatkan ketidaktentraman makhluk hidup di sekitarnya. Pencemaran suara diakibatkan suara-suara bervolume tinggi yang membuat daerah sekitarnya menjadi bising dan tidak menyenangkan. Tingkat kebisingan terjadi bila intensitas bunyi melampui 70 desibel (dB). Hal tersebut dapat terjadi pada industri. Mesin-mesin yang digunakan oleh industri dapat menghasilkan intensitas bunyi yang melampui 70 desibel (dB) jika tidak ada monitor atau pengawasan.
+
+Oleh karena itu, pengawasan perlu dilakukan agar lingkungan yang ditempati oleh masyarakat tidak berbahaya untuk kesehatan. Pengawasan dilakukan oleh pemerintah sebagai instansi yang memiliki kewajiban untuk mensejahterakan masyarakatnya. Pemerintah dapat melakukan pengawasan dengan cara membuat sebuah desain smart city. Smart city ini dapat membantu pemerintah dalam melakukan pengawasan terhadap industri-industri yang berada di wilayah pemetintahannya.
+
+## Polusi udara
+
+Pengawasan tingkat polusi udara pada industri dapat dilakukan dengan memasang sebuah mikrokontroller. Mikrokontroller ini menggunakan arduino. Nantinya, mikrokontroller ini dipasang di tempat-tempat pembuangan gas dari pabrik industri tersebut. Sensor kualitas udara dan gas pada mikrokontroller akan mendeteksi kualitas udara yang dihasilkan. Setelah sensor mengukur kualitas udara, data hasil pengukuran tersebut kemudian dikirimkan ke server menggunakan internet.
+
+#### Hardware
+* Arduino-compatible board
+* Arduino internet shield (WIFI, CC3000, Ethernet, GSM)
+* Grove shield
+* Grove air quality sensor
+* Grove gas sensor
+* A-B Cable
+
+![](https://plot.ly/static/img/workshop/arduino-air-quality-parts.jpg)
+
+![](https://plot.ly/static/img/workshop/arduino-air-quality-splash.jpg)
+
+#### Sofware
+Jika arduino yang digunakan tipe wifi shield. Software yang digunakan adalah version 1.0.3 of the Arduino IDE. Download dan install di Arduino Library Folder. Biasanya secara default akan terdapat dalam folder /User/Documents/Arduino/Libraries.
+
+## Polusi Air
+
+Pengawasan polusi air yang dihasilkan oleh pabrik-pabrik industri dapat dilakukan dengan memasang sebuah mikrokontroller. Mikrokontroller di pasang pada aliran-aliran pembuangan limbah dari pabrik. Agar mikrokontroller ini tidak rusak oleh air, maka dipasanglah sebuah waterproof. Mikrokotroller ini akan mengukur kualitas dari air pembuangan pabrik dalam kurun waktu tertentu. Nantinya, data dari arduino tersebut dikirim melalui SMS. Hal ini tentunya menghemat biaya dan waktu.
+
+![](http://publiclab.org/sites/default/files/imagecache/default/IMG_4053.JPG)
+
+### Hardware
+* An arduino microcontroller
+* A set of water quality sensors
+* A network connection module
+* A GSM based cellular module
+* The waterproof digital temperature sensor from Adafruit
+
+### Software
+Data dari sensor ini di upload menggunakan GPRS Shield dari Seedstudio.
+
+## Polusi Suara
+
+Pengawasan terhadap kebisingan yang ditimbulkan oleh pabrik-pabrik dapat dilakukan dengan menempatkan sebuah mikrokontroller di pabrik tersebut. Mikrokontroller tersebut menggunakan arduino tipe pro mini 3.3V. Pada arduino tersebut terdapat sebuah sinyal audio. Sinyal audio inilah yang berfungsi mengukur frekuensi suara yang muncul. Tetapi, sinyal audio yang terdapat pada arduino tersebut hanya mampu mengukur pada frekuensi yang kecil. Oleh sebab itu, mikrokontroller tersebut ditambahkan sebuah sensor suara ADMP401. Sensor suara inilah yang nantinya mengirimkan sebuah sinyal analog ke arduino. Setelah arduino menerima sinyal analog dari ADMP401, sinya tersebut disimpan dalam sebuah memory di arduino. Hal ini bertujuan agar data sebelum-sebelumnya tidak hilang.
+
+### Hardware
+* Arduino Pro Mini 3.3V
+* Breakout for ADMP401 MEMS Microphone
+* OpenLog
+* DeadOn Real Time Clock
+* Power from 5V DC to DC Step Up - 2xAA
+* Electric Imp Breakout
+* Electric Imp
+* Grove OLED Display 128x64
+
+Gambar arduino
+
+![](http://earthjournalism.net/images/noisemonitor2.1.jpg)
+
+Gambar Sensor suara
+
+![](http://earthjournalism.net/images/noisemonitor2.2.jpg)
+
